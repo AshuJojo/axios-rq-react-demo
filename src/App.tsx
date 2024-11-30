@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import ProductList from "./components/ProductList";
 
 const queryClient = new QueryClient();
 
@@ -10,6 +11,7 @@ function App() {
           <h1 className="text-[2rem] text-neutral-950 font-bold">
             React Query with Axios
           </h1>
+          <ProductList />
         </div>
       </main>
     </QueryClientProvider>
